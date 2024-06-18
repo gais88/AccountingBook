@@ -5,6 +5,10 @@ VisualStudioVersion = 17.9.34622.214
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccountingBook.Web", "AccountingBook.Web\AccountingBook.Web.csproj", "{71CF0CD4-4BA6-462F-AF6C-A05D6F9CE285}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccountingBook.Data", "AccountingBook.Data\AccountingBook.Data.csproj", "{71E6802F-24DC-4AC9-87E1-38BAFCE4165E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccountingBook.Core", "AccountingBook.Core\AccountingBook.Core.csproj", "{7C8502F6-FB84-4E79-B02A-85244DE412FA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{71CF0CD4-4BA6-462F-AF6C-A05D6F9CE285}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{71CF0CD4-4BA6-462F-AF6C-A05D6F9CE285}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{71CF0CD4-4BA6-462F-AF6C-A05D6F9CE285}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71E6802F-24DC-4AC9-87E1-38BAFCE4165E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71E6802F-24DC-4AC9-87E1-38BAFCE4165E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71E6802F-24DC-4AC9-87E1-38BAFCE4165E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71E6802F-24DC-4AC9-87E1-38BAFCE4165E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C8502F6-FB84-4E79-B02A-85244DE412FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C8502F6-FB84-4E79-B02A-85244DE412FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C8502F6-FB84-4E79-B02A-85244DE412FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C8502F6-FB84-4E79-B02A-85244DE412FA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
