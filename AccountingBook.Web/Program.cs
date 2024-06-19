@@ -1,4 +1,8 @@
 
+using AccountingBook.Data;
+using Microsoft.EntityFrameworkCore;
+using System;
+
 namespace AccountingBook.Web
 {
     public class Program
@@ -13,18 +17,21 @@ namespace AccountingBook.Web
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+            var connectionString = builder.Configuration.GetConnectionString("DefaultConnection")
+                                      ?? throw new InvalidOperationException("No connection string was found");
 
-            var app = builder.Build();
+               builder.Services.AddDbContext<AppDbContext>(options =>
+                                                  options.UseSqlServer(connectionString));
+
+      var app = builder.Build();
 
             // Configure the HTTP request pipeline.
-            //if (app.Environment.IsDevelopment())
-            //{
-            //    app.UseSwagger();
-            //    app.UseSwaggerUI();
-            //}
+            if (app.Environment.IsDevelopment())
+            {
+                app.UseSwagger();
+                app.UseSwaggerUI();
+            }
 
-            app.UseDefaultFiles();
-            app.UseStaticFiles();
             app.UseHttpsRedirection();
 
             app.UseAuthorization();
